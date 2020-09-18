@@ -1,0 +1,186 @@
+<!-- KARN KUMAR SINGH  ROLL NO=1906181-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is my page">
+    <title>FORM</title>
+    <style>
+        html {
+            background-color: #5fdcf1;
+        }
+        body {
+            font-family: "Lucida Console", Courier, monospace;
+            margin: 60px;
+            font-size: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 4rem;
+            margin: 50px auto;
+        }
+        h2 {
+            font-size: 2rem;
+            padding: 15px;
+            background-color: rgb(9, 255, 0);
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input,
+        select,
+        textarea {
+            border: solid cornflowerblue 2px;
+            border-radius: 5px;
+            padding: 12px 20px;
+            font-size: 20px;
+        }
+        input[type='radio'] {
+            border: 0px;
+            width: 50px;
+            height: 1em;
+        }
+      
+        td {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+   <h1>REGISTRATION</h1> 
+  <form action="karn.js">
+      <fieldset>
+         <div><h2>BASIC DETAILS</h2></div> 
+          <table><tr><td>Form Number:</td><td><input type="number"></td></tr>
+            <tr><td>Name:</td><td><input type="text"></td></tr>
+            <tr><td>Roll Number:</td><td><input type="number"></td></tr>
+            <tr><td>Gender:</td><td>Male<input type="radio" value="Male" name="gender">Female<input type="radio" value="female" name="gender"></td></tr>
+            <tr><td>DOB:</td><td><input type="date"></td></tr>
+            <tr><td>PWD:</td><td>YES<input type="radio" value="YES" name="PWD">NO<input type="radio" value="NO" name="PWD"></td></tr> 
+             <tr><td>Category:</td><td><select value=" ">
+                <option value="General">General</option>
+                <option value="OBC">OBC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option></select>
+             </td></tr>
+             <tr>
+                <td><label for="Address">Address:</label><br /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea id="Address" cols="50" rows="10"></textarea>
+                </td>
+            </tr>	<tr>
+                <td><label for="pincode">PIN Code:</label></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="mob-std">Phone of Student:</label></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="mob-grd">Phone of Guardian:</label></td>
+                <td><input type="number"></td>
+            </tr>
+         </table></fieldset>
+     
+         <br><br>
+      <fieldset>
+       <div><h2>ACADEMIC INFORMATION</h2></div> 
+        <table>
+            <tr>
+                <td><label for="course">Course:</label></td>
+                <td>
+                    <select id="course"><option value="B.Tech">B.Tech</option>
+                        <option value="B.Arch">B.Arch</option>
+                        <option value="I.Msc">I.Msc</option>
+                        <option value="M.Tech">M.Tech</option>
+                        <option value="M.Arch">M.Arch</option></select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="branch">Branch:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="sem">Semester:</label></td>
+                <td>
+                    <select id="course"><option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>
+                        <option value="4th">4th</option></select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="AIR">All India Rank:</label></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="cat">Category Rank:</label></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="cgpa">CGPA:</label></td>
+                <td><input type="number" id="cgpa" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="backlog">Backlog:</label>
+                </td>
+                <td id="backlog">
+                    <label for="yes">YES</label>
+                    <input type="radio" name="back">
+                    <label for="no">NO</label><input type="radio" name="noback">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="acc">Hostel Accomodation:</label>
+                </td>
+                <td id="acc">
+                    <label for="yes">YES</label>
+                    <input type="radio" name="acc">
+                    <label for="no">NO</label>
+                    <input type="radio" name="no acc">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hos">Name of Hostel:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="room-num">Room Number:</label></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+      </fieldset>
+      <br><br>
+      <fieldset>
+       <div><h2>ACCOUNT DETAILS FOR REFUNDING PROCESS</h2></div> 
+        <table>
+            <tr>
+                <td><label for="acc-name">Account Holder Name:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="acc-num">Account Number:</label></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="ifsc">IFSC Code:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="bank-name">Bank Name:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="bank-branch">Branch:</label></td>
+                <td><input type="text" i></td>
+            </tr>
+        </table></fieldset><input type="submit" value="Submit"></form>          
+</body>
+</html>
